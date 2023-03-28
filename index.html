@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .hover:hover {
+            background-color: #cfcfcf;
+        }
+
+        input:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <!-- Navebar -->
+    <div class="container-fluid">
+        <div class="row" style="height: 64px;">
+            <div class="col-2 d-flex align-items-center">
+                <img class="ms-3 pe-2" width="40"
+                    src="https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_48dp.png" alt="">
+                <span class="fs-5 fw-bold">Drive</span>
+            </div>
+            <div class="col-6">
+                <div class="row rounded-pill mt-2 py-2" style="background-color: #e2ecfb;">
+                    <div class="col-1">
+                        <span class="rounded-circle p-2 hover">
+                            <svg focusable="false" height="24px" viewBox="0 0 24 24" width="24px"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.49,19l-5.73-5.73C15.53,12.2,16,10.91,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5C3,13.09,5.91,16,9.5,16 c1.41,0,2.7-0.47,3.77-1.24L19,20.49L20.49,19z M5,9.5C5,7.01,7.01,5,9.5,5S14,7.01,14,9.5S11.99,14,9.5,14S5,11.99,5,9.5z">
+                                </path>
+                                <path d="M0,0h24v24H0V0z" fill="none"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col-10">
+                        <input type="text" placeholder="Search in Drive" class="border-0 bg-transparent w-100">
+                    </div>
+                    <div class="col-1">
+                        <span class="rounded-circle p-2 hover">
+                            <svg class="Q6yead QJZfhe " width="24" height="24" viewBox="0 0 24 24" focusable="false">
+                                <path
+                                    d="M3 17v2h6v-2H3zM3 5v2h10V5H3zm10 16v-2h8v-2h-8v-2h-2v6h2zM7 9v2H3v2h4v2h2V9H7zm14 4v-2H11v2h10zm-6-4h2V7h4V5h-4V3h-2v6z">
+                                </path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col d-flex align-items-center justify-content-end" style="height: 64px;">
+                        <span class="rounded-circle p-2 hover">
+                            <svg viewBox="0 0 24 24" width="24px" height="24px" class=" a-s-fa-Ha-pa c-qd"
+                                focusable="false" fill="currentColor">
+                                <path
+                                    d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z">
+                                </path>
+                                <path d="M7 15h10v2H7zm3.3-3.8L8.4 9.3 7 10.7l3.3 3.3L17 7.3l-1.4-1.4z"></path>
+                            </svg>
+                        </span>
+                        <span class="rounded-circle p-2 hover">
+                            <svg class="wo35tf" xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
+                                viewBox="0 0 24 24" fill="#000000" focusable="false">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="rounded-circle p-2 hover">
+                            <svg class=" a-s-fa-Ha-pa c-qd" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="currentColor" focusable="false">
+                                <path
+                                    d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z">
+                                </path>
+                                <circle cx="12" cy="12" r="3.5"></circle>
+                            </svg>
+                        </span>
+
+                        <span class="rounded-circle p-2 hover">
+                            <svg class="gb_1e" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg> 
+                        </span>
+
+                        <div class="col-1 w-20  ">
+
+                        <span class="rounded-circle py-1 w-13">
+                          
+                            <img src="profile.jpeg" class="img-fluid rounded-circle  py-2" alt="Profile picture ">
+                               
+                        </span>
+                    </div>
+
+
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <button class="btn btn-light rounded-4 d-flex align-items-center p-3 shadow my-2 bg-white">
+                    <span class="pe-2">
+                        <svg width="24" height="24" viewBox="0 0 24 24" focusable="false">
+                            <path d="M20 13h-7v7h-2v-7H4v-2h7V4h2v7h7v2z"></path>
+                        </svg>
+                    </span>
+                    <span>New</span>
+                </button>
+                <ul class="list-unstyled mt-4">
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class="pe-2 ms-3">
+                            <svg class=" c-qd" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"
+                                focusable="false">
+                                <path
+                                    d="M9.05 15H15q.275 0 .5-.137.225-.138.35-.363l1.1-1.9q.125-.225.1-.5-.025-.275-.15-.5l-2.95-5.1q-.125-.225-.35-.363Q13.375 6 13.1 6h-2.2q-.275 0-.5.137-.225.138-.35.363L7.1 11.6q-.125.225-.125.5t.125.5l1.05 1.9q.125.25.375.375T9.05 15Zm1.2-3L12 9l1.75 3ZM3 17V4q0-.825.587-1.413Q4.175 2 5 2h14q.825 0 1.413.587Q21 3.175 21 4v13Zm2 5q-.825 0-1.413-.587Q3 20.825 3 20v-1h18v1q0 .825-.587 1.413Q19.825 22 19 22Z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>My Drive</span>
+                    </li>
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class=" pe-2 ms-3">
+                            <svg class=" c-qd" width="24px" height="24px" viewBox="0 0 24 24" fill="currentColor"
+                                focusable="false">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 9h-4v-7h4v7z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>Computer</span>
+                    </li>
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class="pe-2 ms-3">
+                            <svg class=" c-qd" width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"
+                                focusable="false">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path
+                                            d="M15,8c0-1.42-0.5-2.73-1.33-3.76C14.09,4.1,14.53,4,15,4c2.21,0,4,1.79,4,4s-1.79,4-4,4c-0.43,0-0.84-0.09-1.23-0.21 c-0.03-0.01-0.06-0.02-0.1-0.03C14.5,10.73,15,9.42,15,8z M16.66,13.13C18.03,14.06,19,15.32,19,17v3h4v-3 C23,14.82,19.42,13.53,16.66,13.13z M9,4c2.21,0,4,1.79,4,4s-1.79,4-4,4s-4-1.79-4-4S6.79,4,9,4z M9,13c2.67,0,8,1.34,8,4v3H1v-3 C1,14.34,6.33,13,9,13z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <span>Shared with me</span>
+                    </li>
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class="pe-2 ms-3">
+                            <svg class="c-qd " width="24px" height="24px" viewBox="0 0 24 24" fill="#000000"
+                                focusable="false">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <path
+                                        d="M11.99,2C6.47,2,2,6.48,2,12s4.47,10,9.99,10C17.52,22,22,17.52,22,12S17.52,2,11.99,2z M15.29,16.71L11,12.41V7h2v4.59l3.71,3.71L15.29,16.71z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <span>Recent</span>
+                    </li>
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class="pe-2 ms-3">
+                            <svg class="a-s-fa-Ha-pa c-qd" width="24px" height="24px" viewBox="0 0 24 24"
+                                focusable="false" fill="currentColor">
+                                <path
+                                    d="M22 9.24l-7.19-.62L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27 18.18 21l-1.63-7.03L22 9.24zM12 15.4l-3.76 2.27 1-4.28-3.32-2.88 4.38-.38L12 6.1l1.71 4.04 4.38.38-3.32 2.88 1 4.28L12 15.4z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>starred</span>
+                    </li>
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class="pe-2 ms-3">
+                            <svg width="24px" height="24px" viewBox="0 0 24 24" fill="#000000" focusable="false"
+                                class=" c-qd a-s-fa-Ha-pa">
+                                <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                <path
+                                    d="M15 4V3H9v1H4v2h1v13c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6h1V4h-5zm2 15H7V6h10v13zM9 8h2v9H9zm4 0h2v9h-2z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>Bin</span>
+                    </li>
+                    <li class="w-100 rounded-pill p-1 hover">
+                        <span class="pe-2 ms-3">
+                            <svg class="a-s-fa-Ha-pa c-qd a-ml-da-Q-c" width="24px" height="24px" viewBox="0 0 24 24"
+                                focusable="false" fill="#6f6f6f">
+                                <g>
+                                    <rect fill="none" height="24" width="24"></rect>
+                                </g>
+                                <g>
+                                    <path
+                                        d="M19,11c0-3.87-3.13-7-7-7C8.78,4,6.07,6.18,5.26,9.15C2.82,9.71,1,11.89,1,14.5C1,17.54,3.46,20,6.5,20 c1.76,0,10.25,0,12,0l0,0c2.49-0.01,4.5-2.03,4.5-4.52C23,13.15,21.25,11.26,19,11z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <span>Storage</span>
+                    </li>
+                    <li class="d-flex justify-content-center mt-2">
+                        <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 3px; width: 80%;">
+                            <div class="progress-bar" style="width: 25%"></div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="btn btn-light rounded-pill text-primary px-3 py-2 ms-3"
+                    style="border: 1px solid #000;">Buy More Space</button>
+            </div>
+            <div class="col bg-white rounded-4 me-3 ">
+                <!-- your task ceate a breadcrumb -->
+                <div class=" row mt-3 justify-content-between ">
+
+                    <div class="col-4">
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb fs-4">
+                                <li class="breadcrumb-item"><a>MyDrive</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Untitled Folders</li>
+                                <span class="ps-1">
+                                    <svg class="a-s-fa-Ha-pa c-qd" width="20px" height="20px" viewBox="0 0 20 20"
+                                        focusable="false" fill="currentColor">
+                                        <polygon points="5,8 10,13 15,8"></polygon>
+                                    </svg>
+                                </span>
+
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-1 ">
+                        <span class="pe-2">
+                            <svg class="a-s-fa-Ha-pa c-qd" width="24px" height="24px" viewBox="0 0 24 24"
+                                focusable="false" fill="currentColor">
+                                <path
+                                    d="M3,5v14h18V5H3z M7,7v2H5V7H7z M5,13v-2h2v2H5z M5,15h2v2H5V15z M19,17H9v-2h10V17z M19,13H9v-2h10V13z M19,9H9V7h10V9z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span>
+                            <svg class="a-s-fa-Ha-pa c-qd" width="24px" height="24px" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z">
+                                </path>
+                            </svg>
+                        </span>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div class="row mt-3">
+                    <div class="col d-flex justify-content-between">
+                        <div class="h6">Folders</div>
+                        <div class="fs-6">
+                            <span class="rounded-circle p-2 hover">
+                                Name
+                            </span>
+                            <span class="rounded-circle p-2 hover">
+                                <svg width="18px" height="18px" viewBox="0 0 48 48" focusable="false"
+                                    fill="currentColor" class="a-s-fa-Ha-pa c-qd">
+                                    <path fill="none" d="M0 0h48v48H0V0z"></path>
+                                    <path d="M8 24l2.83 2.83L22 15.66V40h4V15.66l11.17 11.17L40 24 24 8 8 24z"></path>
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 mt-3">
+                        <div class="card border-0 bg-light rounded-4">
+                            <div class="card-body hover rounded-4 d-flex">
+                                <span class="pe-2">
+                                    <svg focusable="false" viewBox="0 0 24 24" height="24px" width="24px" fill="#5f6368"
+                                        class="a-s-fa-Ha-pa">
+                                        <g>
+                                            <path
+                                                d="M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8l-2-2z">
+                                            </path>
+                                            <path d="M0 0h24v24H0z" fill="none"></path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <span>Untitled folder</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
